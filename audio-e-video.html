@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOVAÊ</title>
+    <style>
+
+        body{
+            background-color: beige;
+            font-family: verdana;
+            color: rgb(161, 89, 1);
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .videos{
+            display: flex;
+            gap: 20px;
+        }
+        .videos video{
+            width: 270px;
+            height: 480px;
+        }
+        .titulo{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .titulo img{
+            width: 80px;
+            height: auto;
+        }
+        .titulo a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(161, 89, 1);
+            text-decoration: none;
+        }
+        .titulo a h6{
+            margin: 5px 0 0;
+        }
+        .titulo a img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .titulo h1{
+            margin-right: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        <div>
+            <img src="sol-renovae.png">
+        </div>
+        <div>
+            <h1>RENOVAÊ</h1>
+        </div>
+        <div>
+            <a href="#audios">
+                <img src="audio-revonae.png">
+                <h6>Áudios Motivacionais</h6>
+            </a>
+        </div>
+        <div>
+            <a href="#videos">
+                <img src="video-renovae.png">
+                <h6>Vídeos Fofos</h6>
+            </a>
+        </div>
+    </div>
+
+    <p>
+        Sabe aqueles dias em que tudo o que a gente precisa é dar uma pausa e recuperar as energias?
+    </p> 
+    <p>  
+        O <b>RENOVAÊ</b> foi criado para trazer um pouco de alegria, leveza e diversão para o seu dia! Aqui você encontra áudios divertidos e vídeos fofos que podem melhorar seu humor e arrancar um sorriso do seu rosto.
+    </p>
+    <p>
+         Respire fundo, aperte o play e permita-se renovar as energias. Afinal, às vezes, tudo o que precisamos é de um momento de descontração!
+    </p>
+    <br/>
+
+    <h3 id="audios">Áudios Motivacionais</h3>
+
+    <ul>
+        <li>
+            <h5>Áudio alimentício</h5>
+            <audio controls>
+                <source src="camarao-com-pao.mp3" type="audio/mp3">
+            </audio>
+        </li>
+        <li>
+            <h5>Áudio com dislalia</h5>
+            <audio controls>
+                <source src="cebolinha-elogios.mp3" type="audio/mp3">
+            </audio>
+        </li>
+        <li>
+            <h5>Áudio contagiante</h5>
+            <audio controls>
+                <source src="gripadinha.mp3" type="audio/mp3">
+            </audio>
+        </li>
+    </ul>
+    <br/>
+
+    <h3 id="videos">Vídeos Fofos</h3>
+
+    <div class="videos"> <!--div container-->
+        <div> <!--div gatos-banho-->
+            <video controls autoplay loop>
+                <source src="gatos-banho.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div> <!--cachorrinhos-->
+            <video controls autoplay loop>
+                <source src="cachorrinhos-na-grama.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div> <!--patinhos-->
+            <video controls autoplay loop>
+                <source src="patinhos-seguindo-mae.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
