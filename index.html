@@ -6,48 +6,175 @@
     <title>RENOVAÊ</title>
     <style>
 
-        body{
-            background-color: beige;
-            font-family: verdana;
-            color: rgb(161, 89, 1);
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        .videos{
-            display: flex;
-            gap: 20px;
-        }
-        .videos video{
-            width: 270px;
-            height: 480px;
-        }
-        .titulo{
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-        .titulo img{
-            width: 80px;
-            height: auto;
-        }
-        .titulo a{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: rgb(161, 89, 1);
-            text-decoration: none;
-        }
-        .titulo a h6{
-            margin: 5px 0 0;
-        }
-        .titulo a img {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
-        .titulo h1{
-            margin-right: 50px;
-        }
+      
+body {
+    background-color: beige;
+    font-family: Verdana, sans-serif;
+    color: rgb(161, 89, 1);
+    margin: 0 10%;
+}
+
+/* Cabeçalho */
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.titulo > div:first-child img {
+    width: 80px;
+    height: auto;
+}
+
+.titulo h1 {
+    margin-right: 50px;
+}
+
+.titulo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(161, 89, 1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.titulo a img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.titulo a h6 {
+    margin: 5px 0 0;
+}
+
+/* Vídeos */
+.videos {
+    display: flex;
+    gap: 20px;
+}
+
+.videos video {
+    display: block;
+    width: 270px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Cabeçalho em duas linhas */
+    .titulo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0 30px;
+    }
+
+    .titulo > div:first-child img {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .titulo a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .titulo a h6 {
+        font-size: 10px;
+    }
+
+    /* Vídeos empilhados */
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videos > div {
+        width: 100%;
+    }
+
+    .videos video {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    /* Áudios sem ultrapassar a tela */
+    audio {
+        max-width: 100%;
+    }
+}
+
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Cabeçalho em duas linhas */
+    .titulo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0 30px;
+    }
+
+    .titulo > div:first-child img {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .titulo a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .titulo a h6 {
+        font-size: 10px;
+    }
+
+    /* Vídeos empilhados */
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videos > div {
+        width: 100%;
+    }
+
+    .videos video {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    /* Áudios sem ultrapassar a tela */
+    audio {
+        max-width: 100%;
+    }
+}
         
     </style>
 </head>
