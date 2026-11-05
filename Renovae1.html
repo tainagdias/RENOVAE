@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENOVAÊ</title>
+    <style>
+
+      
+body {
+    background-color: beige;
+    font-family: Verdana, sans-serif;
+    color: rgb(161, 89, 1);
+    margin: 0 10%;
+}
+
+/* Cabeçalho */
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.titulo > div:first-child img {
+    width: 80px;
+    height: auto;
+}
+
+.titulo h1 {
+    margin-right: 50px;
+}
+
+.titulo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(161, 89, 1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.titulo a img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.titulo a h6 {
+    margin: 5px 0 0;
+}
+
+/* Vídeos */
+.videos {
+    display: flex;
+    gap: 20px;
+}
+
+.videos video {
+    display: block;
+    width: 270px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Cabeçalho em duas linhas */
+    .titulo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0 30px;
+    }
+
+    .titulo > div:first-child img {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .titulo a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .titulo a h6 {
+        font-size: 10px;
+    }
+
+    /* Vídeos empilhados */
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videos > div {
+        width: 100%;
+    }
+
+    .videos video {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    /* Áudios sem ultrapassar a tela */
+    audio {
+        max-width: 100%;
+    }
+}
+
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Cabeçalho em duas linhas */
+    .titulo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0 30px;
+    }
+
+    .titulo > div:first-child img {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .titulo a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .titulo a h6 {
+        font-size: 10px;
+    }
+
+    /* Vídeos empilhados */
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videos > div {
+        width: 100%;
+    }
+
+    .videos video {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    /* Áudios sem ultrapassar a tela */
+    audio {
+        max-width: 100%;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <div>
+            <img src="sol-renovae.png">
+        </div>
+        <div>
+            <h1>RENOVAÊ</h1>
+        </div>
+        <div>
+            <a href="#audios">
+                <img src="audio-revonae.png">
+                <h6>Áudios Motivacionais</h6>
+            </a>
+        </div>
+        <div>
+            <a href="#videos">
+                <img src="video-renovae.png">
+                <h6>Vídeos Fofos</h6>
+            </a>
+        </div>
+    </div>
+
+    <p>
+        Sabe aqueles dias em que tudo o que a gente precisa é dar uma pausa e recuperar as energias?
+    </p> 
+    <p>  
+        O <b>RENOVAÊ</b> foi criado para trazer um pouco de alegria, leveza e diversão para o seu dia! Aqui você encontra áudios divertidos e vídeos fofos que podem melhorar seu humor e arrancar um sorriso do seu rosto.
+    </p>
+    <p>
+         Respire fundo, aperte o play e permita-se renovar as energias. Afinal, às vezes, tudo o que precisamos é de um momento de descontração!
+    </p>
+    <br/>
+
+    <h3 id="audios">Áudios Motivacionais</h3>
+
+    <ul>
+        <li>
+            <h5>Áudio alimentício</h5>
+            <audio controls>
+                <source src="camarao-com-pao.mp3" type="audio/mp3">
+            </audio>
+        </li>
+        <li>
+            <h5>Áudio com dislalia</h5>
+            <audio controls>
+                <source src="cebolinha-elogios.mp3" type="audio/mp3">
+            </audio>
+        </li>
+        <li>
+            <h5>Áudio contagiante</h5>
+            <audio controls>
+                <source src="gripadinha.mp3" type="audio/mp3">
+            </audio>
+        </li>
+    </ul>
+    <br/>
+
+    <h3 id="videos">Vídeos Fofos</h3>
+
+    <div class="videos"> <!--div container-->
+        <div> <!--div gatos-banho-->
+            <video controls autoplay loop>
+                <source src="gatos-banho.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div> <!--cachorrinhos-->
+            <video controls autoplay loop>
+                <source src="cachorrinhos-na-grama.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div> <!--patinhos-->
+            <video controls autoplay loop >
+                <source src="patinhos-seguindo-mae.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>

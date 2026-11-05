@@ -1,0 +1,198 @@
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-color: beige;
+    font-family: Verdana, sans-serif;
+    color: rgb(161, 89, 1);
+    margin: 0;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 40px;
+    flex-wrap: wrap;
+    background-color: #ffd673;
+    padding: 20px 10%;
+    margin: 0 -10% 40px;
+}
+
+header > img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0 50px 0 0;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav div {
+    text-align: center;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(161, 89, 1);
+    text-decoration: none;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+nav h6 {
+    margin: 5px 0 0;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    line-height: 1.7;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+main p {
+    text-align: justify;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+main h3 {
+    margin-top: 35px;
+}
+
+/* LISTAS */
+main ul {
+    padding-left: 25px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+/* ÁUDIOS */
+audio {
+    max-width: 100%;
+}
+
+/* VÍDEOS */
+.videos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.videos video {
+    width: 270px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 0 20px;
+    text-align: center;
+    background-color: #ffd673;
+    padding: 20px 10%;
+    margin: 50px -10% 0;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+    /* Cabeçalho */
+    header {
+        justify-content: center;
+        gap: 12px;
+        padding: 20px 5%;
+        margin: 0 -5% 30px;
+    }
+
+    header > img {
+        width: 50px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    /* Navegação */
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 15px;
+    }
+
+    nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    nav h6 {
+        font-size: 10px;
+    }
+
+    /* Textos */
+    main p {
+        text-align: left;
+    }
+
+    /* Vídeos empilhados */
+    .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos > div {
+        width: 100%;
+    }
+
+    .videos video {
+        width: 100%;
+        max-width: 270px;
+        margin: auto;
+    }
+
+    /* Rodapé */
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px 5%;
+        margin: 50px -5% 0;
+    }
+}
